@@ -53,8 +53,7 @@ export default function Home() {
 
           <p className="max-w-lg text-base leading-relaxed text-white/70 sm:text-lg">
             Znamenitosti, otoci, gastro preporuke i sva događanja na jednom
-            mjestu — od ljetnih festivala do Adventa u Zadru. Istražite grad
-            kao pravi domaćin.
+            mjestu.
           </p>
 
           <div className="flex flex-wrap justify-center gap-3 pt-1 lg:justify-start">
