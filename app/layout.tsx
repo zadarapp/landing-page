@@ -42,9 +42,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="hr"
-      className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} h-full antialiased bg-ink`}
     >
-      <body className="min-h-full flex flex-col bg-ink">{children}</body>
+      <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
 }
