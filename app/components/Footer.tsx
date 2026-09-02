@@ -10,7 +10,7 @@ const LEGAL_LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#020a13] text-white/60">
+    <footer className="bg-ink text-white/60">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-8 px-6 py-10 sm:px-10">
         <div className="flex flex-col items-center gap-6 border-b border-white/10 pb-8 sm:flex-row sm:justify-between">
           <a href="#top" className="flex items-center gap-2.5">
