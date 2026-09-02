@@ -12,10 +12,25 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const title = "ZadarApp - Sve o Zadru i otocima u jednoj aplikaciji";
+const description =
+  "Znamenitosti, otoci, gastro preporuke i događanja u Zadru - uključujući Advent u Zadru. Preuzmite ZadarApp za iOS i Android.";
+
 export const metadata: Metadata = {
-  title: "ZadarApp — Sve o Zadru i otocima u jednoj aplikaciji",
-  description:
-    "Znamenitosti, otoci, gastro preporuke i događanja u Zadru — uključujući Advent u Zadru. Preuzmite ZadarApp za iOS i Android.",
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    siteName: "ZadarApp",
+    locale: "hr_HR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

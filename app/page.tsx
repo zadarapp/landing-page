@@ -35,18 +35,36 @@ function IconPlayLogo({ className }: { className?: string }) {
 
 export default function Home() {
   return (
-    <div className="relative flex h-screen min-h-screen w-full flex-col overflow-y-auto bg-[#04101d] text-white lg:overflow-hidden">
-      
-      
+    <div className="relative flex min-h-screen w-full flex-col overflow-y-auto bg-[#04101d] text-white lg:overflow-hidden">
+
+      {/* Wave vector – decorative, sits behind every other element */}
+      <svg
+        className="pointer-events-none absolute inset-x-0 bottom-0 z-0 h-100 md:h-150 w-full text-[#244AC8]/90"
+        viewBox="0 0 1440 220"
+        fill="currentColor"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+      >
+        <path d="M0,96L60,101.3C120,107,240,117,360,112C480,107,600,85,720,80C840,75,960,85,1080,101.3C
+1200,117,1320,139,1380,149.3L1440,160L1440,220L0,220Z" />
+      </svg>
 
       {/* Main */}
       <main className="relative z-10 mx-auto grid w-full max-w-6xl flex-1 grid-cols-1 items-center gap-10 px-6 py-10 sm:px-10 lg:grid-cols-[1fr_0.9fr] lg:gap-8 lg:py-0">
         {/* Left: copy */}
         <div className="flex flex-col items-center gap-6 text-center lg:items-start lg:text-left">
+          <Image 
+           src={"/zadar-logo.webp"}
+           height={100}
+           width={100}
+           alt="logo"
+           className="w-20 h-20 md:w-30 md:h-30"
+           
+           />
           <h1 className="text-4xl leading-[1.08] font-bold tracking-tight sm:text-5xl lg:text-[3.4rem]">
             Cijeli Zadar,
             <br />
-            <span className="bg-gradient-to-r from-[#ff8a3d] via-[#ffb35c] to-[#1fb6c9] bg-clip-text text-transparent">
+            <span className="text-[#244AC8]">
               u vašem džepu.
             </span>
           </h1>
@@ -59,28 +77,28 @@ export default function Home() {
           <div className="flex flex-wrap justify-center gap-3 pt-1 lg:justify-start">
             <a
               href="#"
-              className="flex items-center gap-2.5 rounded-xl bg-white px-5 py-3 text-[#0b3049] shadow-lg shadow-black/20 transition-transform hover:scale-105"
+              className="flex items-center gap-2.5 rounded-xl bg-white px-6 py-3 text-[#0b3049] shadow-lg shadow-black/20 transition-transform "
             >
               <IconAppleLogo className="h-6 w-6" />
               <span className="text-left leading-tight">
-                <span className="block text-[0.65rem] text-black/60">
+                <span className="block text-sm text-black/60">
                   Preuzmite na
                 </span>
-                <span className="block text-sm font-semibold">
+                <span className="block text-md font-semibold">
                   App Store
                 </span>
               </span>
             </a>
             <a
               href="#"
-              className="flex items-center gap-2.5 rounded-xl bg-white px-5 py-3 text-[#0b3049] shadow-lg shadow-black/20 transition-transform hover:scale-105"
+              className="flex items-center gap-2.5 rounded-xl bg-white px-6 py-3 text-[#0b3049] shadow-lg shadow-black/20 transition-transform"
             >
               <IconPlayLogo className="h-6 w-[1.35rem]" />
               <span className="text-left leading-tight">
-                <span className="block text-[0.65rem] text-black/60">
+                <span className="block text-sm text-black/60">
                   Preuzmite na
                 </span>
-                <span className="block text-sm font-semibold">
+                <span className="block text-md font-semibold">
                   Google Play
                 </span>
               </span>
@@ -92,7 +110,7 @@ export default function Home() {
         <div className="flex items-center justify-center pt-6 lg:pt-0">
           <div className="flex items-end">
             <Image
-              src="/mobile2.png"
+              src="/mobile_2.webp"
               alt="ZadarApp – pregled zadarskih otoka"
               width={423}
               height={858}
@@ -100,7 +118,7 @@ export default function Home() {
               className="w-32 -rotate-6 drop-shadow-2xl sm:w-40 lg:w-48"
             />
             <Image
-              src="/mobile1.png"
+              src="/mobile_1.webp"
               alt="ZadarApp – skrivene plaže u Zadru"
               width={423}
               height={858}
