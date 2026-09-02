@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ScreenShowcase from "./components/ScreenShowcase";
 
 // simple-icons:apple
 function IconAppleLogo({ className }: { className?: string }) {
@@ -108,24 +109,7 @@ export default function Home() {
 
         {/* Right: phone screenshots */}
         <div className="flex items-center justify-center pt-6 lg:pt-0">
-          <div className="flex items-end">
-            <Image
-              src="/mobile_2.webp"
-              alt="ZadarApp – pregled zadarskih otoka"
-              width={423}
-              height={858}
-              priority
-              className="w-32 -rotate-6 drop-shadow-2xl sm:w-40 lg:w-48"
-            />
-            <Image
-              src="/mobile_1.webp"
-              alt="ZadarApp – skrivene plaže u Zadru"
-              width={423}
-              height={858}
-              priority
-              className="-ml-10 z-10 w-36 rotate-3 drop-shadow-2xl sm:-ml-14 sm:w-44 lg:-ml-16 lg:w-52"
-            />
-          </div>
+          <ScreenShowcase />
         </div>
       </main>
     </div>
